@@ -1,0 +1,140 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+*{
+  font-family: inherit;
+  font-size: inherit;
+}
+textarea:focus, input:focus{
+  outline: none;
+}
+
+
+
+
+body{
+
+  width: 80vw;
+  margin:  auto;
+
+  background-color: #404258;
+  
+
+
+  background: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b569f925637835.56348737b01da.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+
+.App{
+  background-color:rgba(24, 26, 27, 0.947);
+  height:fit-content;
+ 
+  text-align: center;
+  color: #fff;
+}
+ 
+.search{
+  font-family: 'Rubik', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.search input{
+  width: 500px;
+  font-size: xx-large;
+  border-radius: 4px;
+  border: none;
+  background-color: #404258;
+  margin-right: 10px;
+  color: #fff;
+}
+.search button{
+  background-color: #daff2c;
+  color: #404253;;
+  border-radius: 4px;
+  border: none;
+  padding: 8.5px;
+  width: 100px;
+  
+  font-size:large;
+}
+.titel{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #daff2c; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  width:fit-content;
+  margin: 35px auto;
+ /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret 100ms  infinite;
+  font-size: large;
+  }
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% ;}
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #daff2c; }
+}
+
+.Links-container{
+  
+  display: flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+  gap: 10px;
+
+}
+
+
+@media (max-width: 650px) {
+   body {
+    width: auto;
+   }
+   .search input{
+    width: 250px;
+   }
+
+   .navbar--item {
+    position: absolute;
+    right: 10px;
+    top: 40px;
+    
+  }
+  .Links-container{
+  flex-direction: column;
+   
+  }
+.newlink {
+  position: fixed;
+  width: calc(100% - 10%);
+  height: 640px;
+  padding-top: 10px;
+  padding:  0px 20px 0px 20px;
+  top: 50%;
+  left: 50%;
+  margin-top: -320px; /* Negative half of height. */
+  margin-left: calc(-100% - -55%); /* Negative half of width. */
+  z-index: 999;
+}
+  .navbar--states{
+    display: none;
+  }
+  .line-v{
+    display: none;
+  }
+ }

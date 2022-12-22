@@ -1,0 +1,187 @@
+header {
+  padding: 30px 25px 15px 25px;
+  background-color: #404258;
+  display: flex;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes Pop-up {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
+.navbar {
+  position: relative;
+}
+
+.navbar--container {
+  display: grid;
+  margin-right: 20px;
+  grid-template-columns: max-content max-content max-content;
+}
+#navbar-icon {
+  width: 80px;
+  height: 80px;
+  animation: App-logo-spin infinite 20s linear;
+}
+#navbar-icon:hover {
+  filter: drop-shadow(2px 2px 2px #daff2c);
+}
+#navbar-h1 {
+  grid-column-start: 2/2;
+}
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+.navbar--item {
+  position: absolute;
+  right: 20px;
+  top: 40px;
+ 
+  cursor: pointer;
+  transition: all 100ms ease-in;
+  border-radius: 5px;
+  background-color: #daff2c;
+  padding: 10px;
+  color: #404253;
+}
+.navbar--item::before {
+  font-family: "Material Icons";
+  content: "add_box";
+}
+.navbar--item:hover {
+  transform: scale(1.2);
+}
+.navbar--states {
+  padding: 5px;
+  height: fit-content;
+}
+.navbar--states span {
+  color: #daff2c;
+  margin: 0px;
+}
+.LinkCard {
+  position: relative;
+  text-align: left;
+  background-color: #404258;
+  padding: 20px;
+  margin: 0 10px 0 10px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.LinkCard input {
+}
+.active {
+  color: #0aee15;
+}
+.offline {
+  color: rgb(91, 91, 91);
+}
+#LinkCard-status {
+  padding: 5px;
+  position: absolute;
+  top: 5px;
+  right: 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+#LinkCard-Copy {
+  padding: 5px;
+  position: absolute;
+  top: 5px;
+  right: 75px;
+  cursor: pointer;
+  transition: all 50ms linear;
+  border-radius: 4px;
+}
+#LinkCard-Copy:hover {
+  background-color: #484848;
+  transform: scale(1.2);
+}
+
+.tagsContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.tagsContainer span {
+  cursor: pointer;
+  background-color: #111111;
+  margin: 4px;
+  padding: 4px;
+  border-radius: 4px;
+}
+.nolinks {
+  text-align: center;
+  background-color: #404258;
+  border-radius: 5px;
+  padding: 50px;
+  margin: auto;
+  margin-bottom: 50px;
+  color: rgb(238, 125, 27);
+  font-weight: 700;
+}
+
+.newlink {
+  position: fixed;
+  width: 580px;
+  height:fit-content;
+ 
+  padding: 0px 20px 0px 20px;
+  top: 50%;
+  left: 50%;
+  margin-top: -350px; /* Negative half of height. */
+  margin-left: -300px; /* Negative half of width. */
+  z-index: 999;
+  border-radius: 5px;
+  background-color: #363746;
+  filter: drop-shadow(5px 5px 5px black);
+}
+
+.newlink form {
+  margin: 20px auto;
+  display: flex;
+
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.newlink form textarea {
+  resize: none;
+}
+.newlink--btn {
+  display: flex;
+  gap: 10px;
+  margin: 20px auto 0 auto;
+}
+
+.Ping {
+  position: fixed;
+  width: 580px;
+  height: 250px;
+  padding-top: 10px;
+  padding: 0px 20px 0px 20px;
+  top: 50%;
+  left: 50%;
+  margin-top: -150px; /* Negative half of height. */
+  margin-left: -300px; /* Negative half of width. */
+  z-index: 999;
+  border-radius: 5px;
+  background-color: #363746;
+  filter: drop-shadow(5px 5px 5px black);
+  font-size: x-large;
+}

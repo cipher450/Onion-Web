@@ -1,0 +1,23 @@
+.centreditems {
+  display: flex;
+  justify-content: center;
+}
+.centred {
+  margin: 0px auto;
+}
+
+.defaultGreen {
+  background-color: #daff2c;
+}
+
+.big-icon {
+  font-size: 5em;
+}
+.mid-icon {
+  font-size: 3.5em;
+}
+.line-v {
+  border-right: #daff2c solid 2px;
+  margin: 2px 4px 2px 4px;
+  box-shadow: 1.5px 1.5px 1.5px #c5e72e;
+}
