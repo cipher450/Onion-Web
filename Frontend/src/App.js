@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import React from "react";
 // these are the components 
 import Navbar from "./components/Navbar";
 import Links from "./components/Links";
