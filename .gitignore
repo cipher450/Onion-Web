@@ -8,3 +8,6 @@ firebase-debug.log
 .github/workflows/firebase-hosting-pull-request.yml
 Frontend/n/404.html
 Frontend/n/index.html
+__pycache__
+Backend/config/__pycache__/db.cpython-310.pyc
+Backend/config/__pycache__/db.cpython-310.pyc
